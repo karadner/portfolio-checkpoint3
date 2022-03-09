@@ -1,0 +1,106 @@
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	background-color: #ffffff;
+	color: #1898E2;
+	
+}
+
+*{
+	font-family: Didot;
+}
+
+p{
+	line-height: 1.5;
+}
+main{
+	line-height: 1.5;
+}
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	color: #093592;
+	font-family: impact;
+	line-height: 100px;
+}
+a{
+	color: #afd2fa;
+	text-decoration: none;
+
+}
+.skip{
+	color: #1898E2;
+	line-height: 1.5;
+}
+nav li{
+	background-color: #093592; 
+	padding:5px;
+	border:3px solid #faa9df;
+	display: inline-block;
+	width: 20%;
+	border-radius: 20px;
+	text-align: center;
+	font-family: Bookman;
+	font-size: 20px;
+}
+.active{
+	background:#093592;
+	color:#6b77c0;
+	text-decoration: underline;
+}
+.active a:visited{
+	color: #faa9df; 
+	text-decoration:none;
+}
+
+a:hover{
+	color: #afd2fa;
+}
+
+
+img{
+    height: auto;
+    width:200px;
+    border: 3px solid #afd2fa;
+	padding: 1px;
+    margin: 10px;
+	border-radius: 15px;
+	
+}
+
+img:hover:nth-child(2n){
+	filter: grayscale(1);
+	border: 3px solid #000000;
+
+}
+
+
+
+h2{
+	font-size: 2em; 
+	color: #093592;
+	font-family: "Snell Roundhand";
+}
+
+p, h1, h2 {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+		grid-column: 1 span/2;
+
+    }
+	.para{
+		background-image: url('../images/calimount.jpeg');
+		color: #ffffff;
+		-webkit-text-stroke: #000000 .75px;
+	}
+	header{
+		display:inline-block;
+	}
+}
