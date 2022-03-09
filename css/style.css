@@ -16,6 +16,8 @@ p{
 }
 main{
 	line-height: 1.5;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 h1{
 	font-size: 2em; 
@@ -43,6 +45,7 @@ nav li{
 	text-align: center;
 	font-family: Bookman;
 	font-size: 20px;
+
 }
 .active{
 	background:#093592;
@@ -61,46 +64,106 @@ a:hover{
 
 img{
     height: auto;
-    width:200px;
-    border: 3px solid #afd2fa;
+    width: 200px;
+    border: 3px solid #000000;
 	padding: 1px;
     margin: 10px;
 	border-radius: 15px;
 	
 }
 
-img:hover:nth-child(2n){
-	filter: grayscale(1);
+img:hover{
+	transform: scale(1.5);
 	border: 3px solid #000000;
 
 }
 
+.navbar{
+	position: sticky;
+	top: 1 ;
+}
 
+#israelheading,
+#italyheading,
+#sloveniaheading,
+#chechheading,
+#franceheading{
+	display:inline-block;
+	background: white;
+	position: sticky;
+	top: 0;
+}
 
 h2{
 	font-size: 2em; 
 	color: #093592;
-	font-family: "Snell Roundhand";
+	font-family: Didot;
 }
 
 p, h1, h2 {
     padding: 10px;
 }
 
+.grid{
+	display:grid; 
+	grid-template-columns: 25% 25% 1fr;
+	grid-column: 1/ span 2;
+	justify-content: space-evenly;
 
-@media screen and (max-width: 900px){
-    .grid{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-		grid-column: 1 span/2;
+}
 
-    }
-	.para{
-		background-image: url('../images/calimount.jpeg');
-		color: #ffffff;
-		-webkit-text-stroke: #000000 .75px;
+#israel,
+#slovenia,
+#france{
+	grid-column: 1/ span 1;
+
+}
+
+#israelheading,
+#sloveniaheading,
+#franceheading{
+	grid-column: 1/span 1;
+}
+
+intro{
+	grid-column:1/span 3;
+}
+
+#israelimages,
+#sloveniaimages,
+#franceimages{
+	grid-column: 2/span 2;
+	justify-content: space-between;
+}
+
+#italy,
+#chech{
+	grid-column: 1/span 1;
+}
+#italyheading,
+#chechheading{
+	grid-column: 1/span 1;
+}
+
+#italyimages,
+#chechimages{
+	grid-column: 2/span 2;
+
+}
+.para{
+	background-image: url('../images/calimount.jpeg');
+	color: #ffffff;
+	-webkit-text-stroke: #000000 .75px;
+	border:5px solid #1898E2;
+}
+
+
+@media screen and (min-width: 900px){
+	.grid{
+		display:grid; 
+		grid-template-columns: 25% 25% 1fr;
+		grid-column: 1/ span 2;
+		justify-content: space-evenly;
 	}
-	header{
-		display:inline-block;
-	}
+	
 }
