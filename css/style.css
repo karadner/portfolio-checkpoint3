@@ -31,6 +31,8 @@ a{
 	text-decoration: none;
 
 }
+
+
 .skip{
 	color: #1898E2;
 	line-height: 1.5;
@@ -38,7 +40,6 @@ a{
 nav li{
 	background-color: #093592; 
 	padding:5px;
-	border:3px solid #faa9df;
 	display: inline-block;
 	width: 20%;
 	border-radius: 20px;
@@ -47,13 +48,17 @@ nav li{
 	font-size: 20px;
 
 }
+ul{
+	background:#093592;
+	border-radius: 10px ;
+}
 .active{
 	background:#093592;
 	color:#6b77c0;
 	text-decoration: underline;
 }
 .active a:visited{
-	color: #faa9df; 
+	color: #9a9fe2; 
 	text-decoration:none;
 }
 
@@ -92,6 +97,7 @@ img:hover{
 	background: white;
 	position: sticky;
 	top: 0;
+	grid-column: 2;
 }
 
 h2{
@@ -106,21 +112,25 @@ p, h1, h2 {
 
 .grid{
 	display:grid; 
-	grid-template-columns: 25% 25% 1fr;
-	grid-column: 1/ span 2;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 1/ span 1;
 	justify-content: space-evenly;
 
 }
 
 #israel,
+#italy,
 #slovenia,
+#chech,
 #france{
-	grid-column: 1/ span 1;
+	grid-column: 1/ span 3;
 
 }
 
 #israelheading,
+#italyheading,
 #sloveniaheading,
+#chechheading,
 #franceheading{
 	grid-column: 1/span 1;
 }
@@ -130,31 +140,23 @@ intro{
 }
 
 #israelimages,
-#sloveniaimages,
-#franceimages{
-	grid-column: 2/span 2;
-	justify-content: space-between;
-}
-
-#italy,
-#chech{
-	grid-column: 1/span 1;
-}
-#italyheading,
-#chechheading{
-	grid-column: 1/span 1;
-}
-
 #italyimages,
-#chechimages{
-	grid-column: 2/span 2;
+#sloveniaimages,
+#chechimages,
+#franceimages{
+	grid-column: 1/span 3;
+	justify-items: space-evenly;
+	max-width: 100%;
 
 }
+
+
 .para{
 	background-image: url('../images/calimount.jpeg');
 	color: #ffffff;
 	-webkit-text-stroke: #000000 .75px;
-	border:5px solid #1898E2;
+	border:5px solid #b7d6e9;
+	border-radius: 10px;
 }
 
 
