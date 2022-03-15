@@ -5,6 +5,7 @@ body{
 	background-color: #eed4c1;
 	color: #1898E2;
 	color: #093592;
+	display:grid;
 	
 }
 
@@ -112,7 +113,6 @@ p, h1, h2 {
 }
 
 .grid{
-	display:grid; 
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 1/ span 1;
 	justify-content: space-evenly;
@@ -132,8 +132,9 @@ p, h1, h2 {
 #italyheading,
 #sloveniaheading,
 #chechheading,
-#franceheading{
-	grid-column: 1/span 1;
+#franceheading,
+#about{
+	grid-column: 1/span 3;
 }
 
 intro{
@@ -156,6 +157,17 @@ intro{
 	color: #ffffff;
 	border:5px solid #b7d6e9;
 	border-radius: 10px;
+	grid-column: 1/span 3;
+}
+
+
+#contact{
+	text-decoration: underline;
+}
+
+.form{
+	font-size: 15px;
+	display: block;
 }
 
 

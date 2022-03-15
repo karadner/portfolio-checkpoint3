@@ -15,11 +15,11 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'G-44PHWRL61G');
 	</script>
 </head>
 <body>
+	
 	<a class = "skip" href="#main">Skip to Main Content</a>
 	<header>
 		<nav>
@@ -34,7 +34,7 @@
 	</header>
 	<main>
 
-		<h2>About me</h2>
+		<h2 id="about">About me</h2>
 		
 			<p class="para">
 				Hi and welcome to my travel blog! I'm Katie Radner, a sophomore at the University of Michigan. I am from Huntington Woods, Michigan. 
@@ -45,10 +45,36 @@
 				site. Throughout my travels, I have learned a lot about different practices and cultures, and I am so fortunate that I have been able to have 
 				had all of these experiences at a young age. 
 			</p>
+			<div class=grid>
 			<img src = "images/headshot1.jpg" alt="Headshot" width="200"/>
 			<img src = "images/friendsunset.jpeg" alt="Sunset with friend" width="200"/>
-
+			</div>
 	</main>	
+	<form
+  	action="https://formspree.io/f/moqrldbo"
+  	method="POST">
+
+	  <fieldset>
+		<legend id="contact">Contact Me</legend>
+	
+		<label for="name" class="form">Your Name</label>
+		<input type="text" id="name" name="full_name" placeholder="Enter Your Name">
+	
+		<label for="email" class="form">Your Email</label>
+		<input type="email" id="email" name="email" placeholder="Enter Your Email">
+	
+	
+		<label for="number" class="form">Your Phone Number</label>
+		<input type="tel" name="phone" id="number" placeholder="Enter Your Number">	
+	
+		<label for="message" class="form">Leave A Message</label>
+		<input placeholder="Enter Your Message" id="message">
+	
+	
+		<label for="submit"></label>
+		<input type="submit" id="submit" >
+	  </fieldset>
+	 </form>
 	<footer>
 		<p>Katie Radner &copy; 2022</p>
 	</footer>
