@@ -2,10 +2,12 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
-	background-color: #eed4c1;
+	background-color: #d2d3dd;
 	color: #1898E2;
 	color: #093592;
 	display:grid;
+	border: 3px solid #b7d6e9;
+
 	
 }
 
@@ -33,6 +35,7 @@ a{
 	text-decoration: none;
 
 }
+
 
 
 .skip{
@@ -64,48 +67,32 @@ ul{
 	text-decoration:none;
 }
 
-a:hover{
-	color: #afd2fa;
-}
+
 
 
 img{
     height: auto;
     width: 200px;
-    border: 3px solid #000000;
+    border: 3px solid #000;
 	padding: 1px;
     margin: 10px;
 	border-radius: 15px;
 	
 }
 
-img:hover{
-	transform: scale(1.5);
-	border: 3px solid #000000;
 
-}
 
 .navbar{
 	position: sticky;
 	top: 1 ;
 }
 
-#israelheading,
-#italyheading,
-#sloveniaheading,
-#chechheading,
-#franceheading{
-	display:inline-block;
-	position: sticky;
-	top: 0;
-	grid-column: 2;
-	background: #eed4c1;
-}
+
 
 h2{
 	font-size: 2em; 
 	color: #093592;
-	font-family: Didot;
+	font-family: bungee;
 }
 
 p, h1, h2 {
@@ -114,8 +101,9 @@ p, h1, h2 {
 
 .grid{
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column: 1/ span 1;
-	justify-content: space-evenly;
+	justify-items: center;
+	justify-content: space-around;
+	align-items: center;
 
 }
 
@@ -134,11 +122,25 @@ p, h1, h2 {
 #chechheading,
 #franceheading,
 #about{
+	display:grid;
+	position: sticky;
+	top: 0;
+	grid-column: 2;
+	background: #d2d3dd;
 	grid-column: 1/span 3;
 }
 
+#aboutme{
+	grid-column: 2;
+
+}
+
+#main{
+	font-size: 40px;
+}
 intro{
 	grid-column:1/span 3;
+	padding: 10px;
 }
 
 #israelimages,
@@ -146,8 +148,10 @@ intro{
 #sloveniaimages,
 #chechimages,
 #franceimages{
-	grid-column: 1/span 3;
+	grid-column: 2;
 	max-width: 100%;
+	justify-items:center;
+
 
 }
 
