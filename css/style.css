@@ -2,11 +2,10 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
-	background-color: #d2d3dd;
+	background-color: #ffffff;
 	color: #1898E2;
 	color: #093592;
 	display:grid;
-	border: 3px solid #b7d6e9;
 
 	
 }
@@ -121,12 +120,13 @@ p, h1, h2 {
 #sloveniaheading,
 #chechheading,
 #franceheading,
-#about{
+#about,
+.headings{
 	display:grid;
 	position: sticky;
 	top: 0;
 	grid-column: 2;
-	background: #d2d3dd;
+	background: #ffffff;
 	grid-column: 1/span 3;
 }
 
@@ -137,6 +137,12 @@ p, h1, h2 {
 
 #main{
 	font-size: 40px;
+	animation: move 5s ease;
+}
+
+@keyframes move{
+    from {width: 475px; opacity:0;}
+    to {width:475px; opacity: 1;}
 }
 intro{
 	grid-column:1/span 3;
@@ -157,9 +163,8 @@ intro{
 
 
 .para{
-	background-image: url('../images/calimount.jpeg');
-	color: #ffffff;
-	border:5px solid #b7d6e9;
+	color: #6158ad;
+	border:5px solid #9a9fe1;
 	border-radius: 10px;
 	grid-column: 1/span 3;
 }
@@ -174,13 +179,22 @@ intro{
 	display: block;
 }
 
+.usa{
+	display:flex;
+	flex-flow: column wrap;
+	justify-self: center;
+
+}
+
+footer{
+			background-image: url('../images/calimount.jpeg');
+
+}
+
 
 @media screen and (min-width: 900px){
 	.grid{
-		display:grid; 
-		grid-template-columns: 25% 25% 1fr;
-		grid-column: 1/ span 2;
-		justify-content: space-evenly;
+		display: inline
 	}
 	
 }
