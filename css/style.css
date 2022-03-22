@@ -5,14 +5,11 @@ body{
 	background-color: #ffffff;
 	color: #1898E2;
 	color: #093592;
-	display:grid;
 
 	
 }
 
-*{
-	font-family: Didot;
-}
+
 
 p{
 	line-height: 1.5;
@@ -21,51 +18,58 @@ main{
 	line-height: 1.5;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 100%;
 }
+
 h1{
-	font-size: 2em; 
 	font-weight: bold;
 	color: #093592;
 	font-family: impact;
 	line-height: 100px;
+	font-size: 40px;
+	animation: move 5s ease;
+	grid-column: 2;
+	justify-self: center;
+
 }
 a{
-	color: #afd2fa;
+	color: #093592;
 	text-decoration: none;
 
 }
 
 
-
 .skip{
 	color: #1898E2;
 	line-height: 1.5;
+	position: absolute;
+
 }
 nav li{
-	background-color: #093592; 
 	padding:5px;
 	display: inline-block;
 	width: 20%;
-	border-radius: 20px;
 	text-align: center;
 	font-family: Bookman;
 	font-size: 20px;
+	border: 3px #093592 solid;
+
 
 }
 ul{
-	background:#093592;
+	background:#ffffff;
 	border-radius: 10px ;
 }
+
 .active{
-	background:#093592;
+	background:#ffffff;
 	color:#6b77c0;
 	text-decoration: underline;
 }
 .active a:visited{
-	color: #9a9fe2; 
+	color: #9a9fe1; 
 	text-decoration:none;
 }
-
 
 
 
@@ -79,23 +83,30 @@ img{
 	
 }
 
-
-
 .navbar{
 	position: sticky;
 	top: 1 ;
 }
 
-
-
 h2{
 	font-size: 2em; 
 	color: #093592;
 	font-family: bungee;
+	display:grid;
+	position: sticky;
+	top: 0;
+	background: #ffffff;
+	grid-column: 2;
+	justify-self: center;
+
+
 }
+
+
 
 p, h1, h2 {
     padding: 10px;
+	
 }
 
 .grid{
@@ -106,54 +117,24 @@ p, h1, h2 {
 
 }
 
-#israel,
-#italy,
-#slovenia,
-#chech,
-#france{
-	grid-column: 1/ span 3;
-
-}
-
-#israelheading,
-#italyheading,
-#sloveniaheading,
-#chechheading,
-#franceheading,
-#about,
-.headings{
-	display:grid;
-	position: sticky;
-	top: 0;
-	grid-column: 2;
-	background: #ffffff;
-	grid-column: 1/span 3;
-}
-
-#aboutme{
-	grid-column: 2;
-
-}
-
-#main{
-	font-size: 40px;
-	animation: move 5s ease;
-}
 
 @keyframes move{
     from {width: 475px; opacity:0;}
     to {width:475px; opacity: 1;}
 }
+
 intro{
 	grid-column:1/span 3;
 	padding: 10px;
+
 }
 
 #israelimages,
 #italyimages,
 #sloveniaimages,
 #chechimages,
-#franceimages{
+#franceimages,
+#aboutme{
 	grid-column: 2;
 	max-width: 100%;
 	justify-items:center;
@@ -167,6 +148,7 @@ intro{
 	border:5px solid #9a9fe1;
 	border-radius: 10px;
 	grid-column: 1/span 3;
+	
 }
 
 
@@ -182,12 +164,11 @@ intro{
 .usa{
 	display:flex;
 	flex-flow: column wrap;
-	justify-self: center;
-
 }
 
+
 footer{
-			background-image: url('../images/calimount.jpeg');
+	background-image: url('../images/calimount.jpeg');
 
 }
 
