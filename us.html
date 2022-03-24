@@ -34,14 +34,16 @@
 			    <li><a href = "homestate.html">Home State Travels</a></li>
 			</ul>
 		</nav>
-		<video class="video" width="320" height="240" autoplay loop muted>
+		<video class="video" width="320" height="240" autoplay loop muted controls>
 			<source src="images/RenderedVideo.mov">
+			<track src="/captions_file.vtt" label="English" kind="captions" srclang="en-us" default >
+
 		</video>
 		<h1 class="h1">In the Country</h1>
 
 	</header>
 	
-		<main class="usa">
+		<main class="usa" id="main">
 			<div class="introtext">
 			This section portrays my travels of places in the United States that I have been to. 
 		</div>
@@ -81,9 +83,9 @@
 				<img src = "images/floridasun.jpeg" alt="Sunshine" width="200"/>
 				<img src = "images/floridasunset.jpeg" alt="Sunset" width="200"/>
 				<img src = "images/miamidin.jpeg" alt="Restaurant in Miami" width="200"/>
-				<h2>
+				<h2 class="headings">
 				California
-			</h2 class="headings">
+			</h2>
 				<p class="para">
 					In the future, California is another place I could see myself living in. It is the perfect
 					combination of warmth, but not too warm, busy, but not too overwhelming, and earthy, but 
